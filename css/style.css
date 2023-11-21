@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.wrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #262626;
+}
+.container{
+max-width: 1210px;
+margin: 0 auto;
+padding: 0 20px;
+
+}
+.header__container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 30px;
+  gap: 30px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__menu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.logo__image{
+  width: 45px;
+  height: 45px;
+}
+.logo__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header__link{
+  transition: all .3s ease-in-out;
+}
+.header__link:hover{
+  color: #054AFB;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 6px;
+  transition: all .3s ease-in-out;
+}
+.button_login{
+  background-color: #D8D9DD;
+  color: #262626;
+}
+.header__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.button_register{
+  background-color: #262626;
+  color: white;
+}
+.button_login:hover{
+  background-color: transparent;
+  color: #262626;
+}
+.button_register:hover{
+  background-color: transparent;
+  color: #262626;
+}
+.header{
+  border-bottom: 1px solid rgba(38, 38, 38, 0.15);
+}
+.start-banner__container{
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.start-banner__top-banner{
+  background-color: #262626;
+  border-radius: 30px;
+  color: #ffffff;
+}
+.start-banner__container{
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.start-top-banner__title{
+  font-size: 40px;
+  font-family: Montserrat Alternates;
+}
+.start-top-banner__subtitle{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.start-top-banner-php-func__vector{
+display: flex;
+align-items: center;
+}
+.start-top-banner-php-func-code{
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+}
+.start-top-banner-php-func-code_color {
+  color: #B1EF42;
+}
+
+.start-banner__bottom-banners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.start__bottom-banner {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.start-button-it-news-banner {
+  background-color: #B1EF42;
+  width: 63%;
+}
+
+.start-button-blog-banner {
+  background-color: #B287FD;
+  width: 34%;
+}
+
+.start-bottom-banner__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-bottom-banner__next-line {
+  align-self: flex-end;
+}
+
+.start-bottom-banner__content {
+  margin-top: 59px;
+}
